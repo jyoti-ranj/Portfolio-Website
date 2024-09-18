@@ -334,3 +334,21 @@ body {
     font-size: 1rem;
   }
 }
+.resume-section {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.resume-preview {
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}

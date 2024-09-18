@@ -1,6 +1,7 @@
 import { Outlet } from 'react-router-dom';
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import SmoothScroll from './components/SmoothScroll';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min'; // Import JS for Bootstrap functionality
@@ -11,6 +12,7 @@ import Experience from './components/Experience';
 import Contact from './components/Contacts';
 import Searchbar from './components/Searchbar';
 import HomePage from './components/HomePage';
+import Resume from './components/Resume';
 
 const Layout = () => {
   return (
@@ -53,6 +55,10 @@ const Layout = () => {
                   <Link className="nav-link" to="/projects">Projects</Link>
                 </li>
                 <li className="nav-item">
+                  <Link className="nav-link" to="/resume">Resume</Link>
+                </li>
+
+                <li className="nav-item">
                   <Link className="nav-link" to="/contact">Contact</Link>
                 </li>
               </ul>
@@ -88,6 +94,8 @@ const App = () => {
             <Route path="experience" element={<Experience />} />
             <Route path="projects" element={<Projects />} />
             <Route path="contact" element={<Contact />} />
+            <Route path="SmoothScroll" element={<SmoothScroll />} />
+            <Route path="resume" element={<Resume />} />
           </Route>
         </Routes>
       </div>
