@@ -12,7 +12,7 @@ import Experience from './components/Experience';
 import Contact from './components/Contacts';
 import Searchbar from './components/Searchbar';
 import HomePage from './components/HomePage';
-import Resume from './components/Resume';
+
 
 const Layout = () => {
   return (
@@ -55,10 +55,6 @@ const Layout = () => {
                   <Link className="nav-link" to="/projects">Projects</Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/resume">Resume</Link>
-                </li>
-
-                <li className="nav-item">
                   <Link className="nav-link" to="/contact">Contact</Link>
                 </li>
               </ul>
@@ -95,7 +91,7 @@ const App = () => {
             <Route path="projects" element={<Projects />} />
             <Route path="contact" element={<Contact />} />
             <Route path="SmoothScroll" element={<SmoothScroll />} />
-            <Route path="resume" element={<Resume />} />
+            
           </Route>
         </Routes>
       </div>
