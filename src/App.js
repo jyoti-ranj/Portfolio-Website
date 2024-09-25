@@ -12,6 +12,7 @@ import Experience from './components/Experience';
 import Contact from './components/Contacts';
 import Searchbar from './components/Searchbar';
 import HomePage from './components/HomePage';
+import ContactForm from './components/ContactForm';  // Make sure the path is correct
 
 
 const Layout = () => {
@@ -91,6 +92,7 @@ const App = () => {
             <Route path="projects" element={<Projects />} />
             <Route path="contact" element={<Contact />} />
             <Route path="SmoothScroll" element={<SmoothScroll />} />
+            <Route path="ContactForm" element={<ContactForm />} />
             
           </Route>
         </Routes>
